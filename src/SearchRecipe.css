@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+.searchRecipe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url("./assets/cover2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search__bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  color: rgb(104, 104, 104);
+  font-size: 1rem;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: rgb(104, 104, 104);
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: rgb(104, 104, 104);
+  font-size: 1rem;
+}
+
+.search__input {
+  height: 50px;
+  width: 800px;
+  padding: 0 40px 0 40px;
+
+  border: none;
+
+  background-color: lightgray;
+
+  border-radius: 20px;
+  margin: 10px;
+  outline: none;
+
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.search__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 80px;
+
+  outline: none;
+
+  border: none;
+  border-radius: 20px;
+  margin: 10px;
+  background-color: #ff795b;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+.search__icon {
+  height: 40px;
+  width: 40px;
+  color: white;
+}
+.search__results {
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  width: 80%;
+  overflow-x: scroll;
+}
+
+.search__result {
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px;
+}
+
+.search__img {
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.search__title {
+  color: #ff795b;
+  margin: 10px;
+  font-weight: normal;
+}
+
+@media (max-width: 620px) {
+  .search__input {
+    width: 70vw;
+  }
+  .search__btn {
+    width: 20vw;
+  }
+} ;

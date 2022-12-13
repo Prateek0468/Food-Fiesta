@@ -1,0 +1,39 @@
+.foodInfo {
+  height: 92vh;
+  display: flex;
+
+  flex-direction: column;
+  background-image: url("./assets/bg-illustration.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.foodInfo > h1 {
+  align-self: center;
+  justify-self: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 20vw;
+  text-align: center;
+  text-shadow: 13px 13px rgba(238, 110, 36, 0.5);
+}
+
+.foodInfo > img {
+  margin-top: 100px;
+  align-self: center;
+  justify-self: center;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  animation: ImgRoatate infinite 20s linear;
+  border-radius: 50px;
+}
+
+@keyframes ImgRoatate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

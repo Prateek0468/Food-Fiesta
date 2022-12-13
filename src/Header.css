@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  background-image: url("./assets/cover2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header > h2 {
+  font-size: 4rem;
+  color: #ff795b;
+  font-family: "Pacifico", cursive;
+  margin: 10px;
+  text-align: center;
+}
+
+@media (max-width: 360px) {
+  .header > h2 {
+    font-size: 2.8rem;
+  }
+}
+
+.header > p {
+  font-size: 2rem;
+  font-weight: 800;
+
+  /* font-family: "Arizonia", cursive; */
+  color: rgb(255, 152, 67);
+  text-align: center;
+  margin: 0 10px;
+}
+
+@media (max-height: 700px) {
+  .card__container {
+    height: 80vh;
+  }
+  .header > h3 {
+    margin: 0;
+  }
+}
